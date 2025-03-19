@@ -1,0 +1,1 @@
+print('Hello World!\n조지현\n2211392\n전자공학전공')
