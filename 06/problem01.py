@@ -1,13 +1,19 @@
 # 동아리원 필터링 프로그램
 
 mem = list()
-out = list()
-mem=list(input().split('\n')) # 타입 변환 후 비교연산자 가능.
 
-for i in range(len(mem)) :
-    if mem[i] == 'END' :
+while True:
+    mem_=input()
+    if mem_ == 'END' :
         break
-    elif mem[i]>=2300000 :
-        out=mem[i]
+    mem.append(mem_)
 
-print(out)
+name=list()
+for mem_ in mem :
+    year = int(mem_[:2])
+
+    if year >= 23:
+        id, nam = mem_.split()
+        mem.append(nam)
+
+print(name)
