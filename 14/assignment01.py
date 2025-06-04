@@ -1,5 +1,5 @@
 def oper(num1,num2,num3,op1,op2) :
-    if op2=='*' or op2== '/' :
+    if (op2=='*' or op2== '/') and (op1=='+' or op1=='-'):
         temp = cal(num2,num3,op2)
         return cal(num1,temp,op1)
     else :
